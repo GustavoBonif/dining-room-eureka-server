@@ -4,9 +4,17 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: dining-room-eureka-server
     environment:
       - DB_HOST=localhost
       - DB_PORT=3306
       - DB_PORT_EUREKA=8761
+      - HOST_EUREKA=dining-room-eureka-server
     ports:
       - "8761:8761"
+    networks:
+      - dining-room-micro
+
+networks:
+  dining-room-micro:
+    external: true
