@@ -6,11 +6,15 @@ Neste repositório está o microsserviços do _Eureka Server_, sendo este o serv
 
 Os outros microsserviços que contém a aplicação Dining-Room na arquitetura de microsserviços são:
 
-- Gateway: https://github.com/GustavoBonif/dining-room-gateway 
+- Eureka-Server: https://github.com/GustavoBonif/dining-room-eureka-server
 - User-Registry: https://github.com/GustavoBonif/dining-room-user-registry 
 - Catalog: https://github.com/GustavoBonif/dining-room-catalog
 - Warehouse: https://github.com/GustavoBonif/dining-room-warehouse
 - Cart: https://github.com/GustavoBonif/dining-room-cart
+- Gateway: https://github.com/GustavoBonif/dining-room-gateway
+
+A versão em arquitetura monolítica deste projeto está em:
+- https://github.com/GustavoBonif/dining-room-mono 
 
 O projet Dining-Room o é um _ecommerce_ simples, com apenas o _backend_, e tem como objetivo comparar o tempo do resposta e o consumo de CPU das instâncias EC2 na AWS de cada aplicação.
 
